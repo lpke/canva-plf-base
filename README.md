@@ -1,4 +1,4 @@
-# Starter Templates
+# canva-plf-base
 
 This directory contains three identical copies of a minimal project boilerplate, one for each of the three technical interview sessions.
 
