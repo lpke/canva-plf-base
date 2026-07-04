@@ -1,1 +1,1 @@
-console.log('JS loaded successfully!')
+console.log('JS loaded successfully!');
