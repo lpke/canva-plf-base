@@ -30,6 +30,8 @@ dist-ssr
 .next
 coverage
 .vite
+.vitest-attachments/
+__screenshots__/
 .env
 .env.*
 !.env.example

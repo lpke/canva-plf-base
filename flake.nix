@@ -18,10 +18,13 @@
           packages = [
             pkgs.nodejs_24
             (pkgs.pnpm.override { nodejs = pkgs.nodejs_24; })
+            pkgs.playwright-driver.browsers
           ];
 
           shellHook = ''
             export PATH="$PWD/.flake.local/bin:$PATH"
+            export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
+            export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
           '';
         };
       });
